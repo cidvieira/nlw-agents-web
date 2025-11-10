@@ -3,6 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import { QuestionForm } from '@/components/question-form'
 import { QuestionList } from '@/components/question-list'
 import { Button } from '@/components/ui/button'
+import { useRooms } from '@/http/use-rooms'
 
 type RoomParams = {
   roomId: string
@@ -10,6 +11,11 @@ type RoomParams = {
 
 export function Room() {
   const params = useParams<RoomParams>()
+  const { data } = useRooms()
+  const roomData = data?.find((r) => r.id === params.roomId)
+
+  // biome-ignore lint/suspicious/noConsole: "<explanation>"
+  console.log(roomData?.name)
 
   if (!params.roomId) {
     return <Navigate replace to="/" />
@@ -34,7 +40,7 @@ export function Room() {
             </Link>
           </div>
           <h1 className="mb-2 font-bold text-3xl text-foreground">
-            Sala de Perguntas
+            Sala de Perguntas: {roomData?.name}
           </h1>
           <p className="text-muted-foreground">
             Faça perguntas e receba respostas com IA

@@ -1,6 +1,25 @@
-# NLW Agents
+# NLW Agents - Web
 
-Projeto desenvolvido durante um evento da Rocketseat para demonstrar o uso de agentes inteligentes na web.
+Este é a interface web para o projeto NLW Agents, uma plataforma para criar salas de perguntas e respostas com o poder de I.A.
+
+## ✨ Funcionalidades
+
+- **Criação de Salas**: Usuários podem criar novas salas com nome e descrição.
+- **Salas Recentes**: Acesso rápido às salas criadas recentemente.
+- **Perguntas e Respostas com I.A.**: Faça perguntas dentro de uma sala e receba respostas geradas por inteligência artificial.
+
+## 🎨 Visualização
+
+<table>
+  <tr>
+    <td align="center"><strong>Tela Inicial</strong></td>
+    <td align="center"><strong>Sala de Perguntas</strong></td>
+  </tr>
+  <tr>
+    <td><img src="assets/image-1.png" alt="Tela de criação e listagem de salas" width="400"/></td>
+    <td><img src="assets/image-2.png" alt="Tela da sala de perguntas e respostas com a IA" width="400"/></td>
+  </tr>
+</table>
 
 ## 🚀 Tecnologias
 
