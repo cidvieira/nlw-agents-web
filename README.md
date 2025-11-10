@@ -1,6 +1,6 @@
 # NLW Agents - Web
 
-Este é a interface web para o projeto NLW Agents, uma plataforma para criar salas de perguntas e respostas com o poder de I.A.
+Interface web para o projeto NLW Agents, uma plataforma para criar salas de perguntas e respostas com o poder de I.A.
 
 ## ✨ Funcionalidades
 
